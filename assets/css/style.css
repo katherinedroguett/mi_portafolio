@@ -5,19 +5,13 @@ body {
   font-weight: 400;
 }
 
-.navbar, #work, #footer {
-  background-color: #660066;
-}
-
 .nav-icon {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
   font-size: 2rem;
 }
 
 .bg-cover {
     background-size: cover !important;
-    background-image: url('../img/bg_hero.png');
+    background-image: url('../img/bg_hero_katherine.jpg');
     height: 800px;
     width: 100%;
 }
@@ -73,11 +67,19 @@ p {
 }
 
 .purple {
-  color: #660066;
+  color: #7600FF;
 }
 
 .carousel-indicators li {
   background-color: #000000;
+}
+
+#footer {
+  background-color: #7600FF;
+}
+
+#footer a{
+  color: #ffffff;
 }
 
 
