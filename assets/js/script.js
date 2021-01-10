@@ -1,7 +1,6 @@
 $(function(){
 
   // SMOOTH SCROLL //
-  
   $("a").click(function(event){
     if (this.hash !== "") {
       event.preventDefault();
@@ -16,5 +15,8 @@ $(function(){
     }
   });
 
+
+  // POPOVERS //
+  $('[data-toggle="popover"]').popover();
 
 });

@@ -15,14 +15,11 @@ body {
   font-size: 2rem;
 }
 
-.katherine {
-  background-image: url('../img/bg_hero.png');
-  height: 700px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  width: 100%;
+.bg-cover {
+    background-size: cover !important;
+    background-image: url('../img/bg_hero.png');
+    height: 800px;
+    width: 100%;
 }
 
 hr {
@@ -49,8 +46,7 @@ hr {
 }
 
 .header-text {
-  padding-top: 8rem;
-  margin-top: 15rem;
+  padding-top: 30rem;
   padding-bottom: 5rem;
 }
 
@@ -78,4 +74,37 @@ p {
 
 .purple {
   color: #660066;
+}
+
+.carousel-indicators li {
+  background-color: #000000;
+}
+
+
+/* INICIO DE MEDIA QUERY */
+
+@media (max-width: 576px) {
+  .bg-cover {
+      height: 600px;
+      background-position: center;
+      margin-top: 4rem;
+  }
+
+  .header-text h1 {
+    font-size: 50px;
+  }
+
+  .header-text h2 {
+    font-size: 50px;
+  }
+
+  .header-text {
+    padding-top: 23rem;
+  }
+
+  #footer h3 {
+    text-align: center;
+    padding: 20px;
+  }
+
 }

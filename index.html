@@ -52,17 +52,17 @@
   <!-- FIN DE NAVBAR -->
 
   <!-- INICIO DE HEADER-->
-    <header class="katherine hero text-light text-right pt-5 mt-5 img-fluid">
-      <div class="container">
-        <div class="header-text">
+  <div class="jumbotron bg-cover text-white">
+      <div class="container text-center">
+        <div class="header-text my-0">
           <h2 class="oswald-extralight display-2 text-center pb-2">YO SOY</h2>
           <h1 class="oswald display-2 text-center">MAGDALENA</h1>
         </div>
       </div>
-    </header>
+  </div>
   <!-- FIN DE HEADER -->
 
-    <!-- INICIO DE SECTION 01-->
+  <!-- INICIO DE SECTION 01-->
     <section id="about">
       <div class="container">
         <div class="row">
@@ -83,10 +83,10 @@
 
       </div>
     </section>
-    <!-- FIN DE SECTION 01-->
+  <!-- FIN DE SECTION 01-->
 
-    <!-- INICIO DE MI EXPERIENCIA-->
-    <section id="experiencia">
+  <!-- INICIO DE MI EXPERIENCIA-->
+      <!--
       <div class="container py-5">
         <h2 class="oswald text-center">MI EXPERIENCIA</h2>
         <hr/>
@@ -106,10 +106,53 @@
 
         </div>
       </div>
-    </section>
-    <!-- FIN DE MI EXPERIENCIA-->
+    -->
+  <section id="experiencia">
+    <div class="container">
 
-    <!-- INICIO DE MI MIS TRABAJOS-->
+        <div id="carousel-exp" class="carousel slide py-5 mb-5" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-exp" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-exp" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+
+            <div class="carousel-item active text-center">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <i class="fab fa-empire fa-8x purple" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Icon01"></i>
+                  <h4 class="oswald mt-3">Stormtrooper</h4>
+                  <h5>1980 - 2014</h5>
+                </div>
+                <div class="col-12 col-md-6">
+                  <i class="fab fa-empire fa-8x purple" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Icon02"></i>
+                  <h4 class="oswald mt-3">Stormtrooper</h4>
+                  <h5>1980 - 2014</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item text-center">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <i class="fab fa-empire fa-8x purple" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Icon03"></i>
+                  <h4 class="oswald mt-3">Stormtrooper</h4>
+                  <h5>1980 - 2014</h5>
+                </div>
+                <div class="col-12 col-md-6">
+                  <i class="fab fa-empire fa-8x purple" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Icon04"></i>
+                  <h4 class="oswald mt-3">Stormtrooper</h4>
+                  <h5>1980 - 2014</h5>
+                </div>
+              </div>
+            </div>
+
+        </div>
+    </div>
+  </section>
+  <!-- FIN DE MI EXPERIENCIA-->
+
+  <!-- INICIO DE MI MIS TRABAJOS-->
     <section id="work" class="container-fluid">
       <div class="container py-5">
         <h2 class="oswald text-center text-white">MIS TRABAJOS</h2>
@@ -123,6 +166,7 @@
               <div class="card-body">
                 <h5 class="card-title font-weight-bold">Meet&Coffee</h5>
                 <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien,</p>
+                <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#work-01">Ver más </button>
               </div>
             </div>
           </div>
@@ -133,6 +177,7 @@
               <div class="card-body">
                 <h5 class="card-title font-weight-bold">Iguana Page</h5>
                 <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien,</p>
+                <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#work-02">Ver más </button>
               </div>
             </div>
           </div>
@@ -143,6 +188,7 @@
               <div class="card-body">
                 <h5 class="card-title font-weight-bold">Suricata</h5>
                 <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien,</p>
+                <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#work-03">Ver más </button>
               </div>
             </div>
           </div>
@@ -153,6 +199,7 @@
                 <div class="card-body">
                   <h5 class="card-title font-weight-bold">Cuppon</h5>
                   <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien,</p>
+                  <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#work-04">Ver más </button>
                 </div>
               </div>
             </div>
@@ -163,6 +210,7 @@
                 <div class="card-body">
                   <h5 class="card-title font-weight-bold">Ricomida</h5>
                   <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien,</p>
+                  <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#work-05">Ver más </button>
                 </div>
               </div>
             </div>
@@ -173,39 +221,150 @@
                 <div class="card-body">
                   <h5 class="card-title font-weight-bold">DMark</h5>
                   <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien,</p>
+                  <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#work-06">Ver más </button>
                 </div>
               </div>
           </div>
       </div>
     </section>
-    <!-- FIN DE MIS TRABAJOS-->
+  <!-- FIN DE MIS TRABAJOS-->
 
-    <!-- INICIO DE CONTACTO-->
+
+
+  <!-- MODALES DE "MIS TRABAJOS" -->
+<div class="modal fade" id="work-01" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="work-01">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid mb-3" src="assets/img/card-3.jpg" alt="Card image cap">
+        <p>UNO</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="work-02" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="work-02">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid mb-3" src="assets/img/card-3.jpg" alt="Card image cap">
+        <p>DOS</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="work-03" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="work-03">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid mb-3" src="assets/img/card-3.jpg" alt="Card image cap">
+        <p>TRES</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="work-04" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="work-04">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid mb-3" src="assets/img/card-3.jpg" alt="Card image cap">
+        <p>CUATRO</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="work-05" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="work-05">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid mb-3" src="assets/img/card-3.jpg" alt="Card image cap">
+        <p>CINCO</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="work-06" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="work-06">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid mb-3" src="assets/img/card-3.jpg" alt="Card image cap">
+        <p>SEIS</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODALES DE "MIS TRABAJOS" -->
+
+
+
+  <!-- INICIO DE CONTACTO-->
     <section id="contact" class="container py-5">
       <h2 class="oswald text-center">CONTACTO</h2>
       <hr/>
       <div class="typeform-widget" data-url="https://franibe.typeform.com/to/AYVtoJ" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=AYVtoJ&utm_source=typeform.com-13260463-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
     </section>
-    <!-- FIN DE CONTACTO-->
+  <!-- FIN DE CONTACTO-->
 
-    <!-- INICIO DE FOOTER-->
+  <!-- INICIO DE FOOTER-->
     <section id="footer">
-      <div class="container py-3">
+      <div class="container py-5">
         <div class="row">
-          <div class="col-6 text-left my-auto">
+          <div class="col-12 col-md-6 my-auto">
             <h3 class="oswald text-white my-auto">MAGDALENA</h3>
           </div>
 
-          <div class="col-6 text-center">
-            <a href="https://github.com/"> <i class="fab fa-github-square fa-3x"></i></a>
-            <a href="https://twitter.com/"> <i class="fab fa-twitter-square fa-3x"></i></a>
-            <a href="https://www.linkedin.com/"> <i class="fab fa-linkedin fa-3x"></i></a>
+          <div class="col-12 col-md-6 text-center">
+            <a href="https://github.com/"> <i class="fab fa-github-square fa-3x mx-1"></i></a>
+            <a href="https://www.linkedin.com/"> <i class="fab fa-linkedin fa-3x mx-1"></i></a>
+            <a href="https://twitter.com/"> <i class="fab fa-twitter-square fa-3x mx-1"></i></a>
+            <a href="https://www.facebook.com/"> <i class="fab fa-facebook-square fa-3x mx-1"></i></a>
           </div>
 
         </div>
       </div>
     </section>
-    <!-- FIN DE FOOTER-->
+  <!-- FIN DE FOOTER-->
 
 
 
